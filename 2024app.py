@@ -6,8 +6,8 @@ from streamlit.components.v1 import html
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import json 
-# test mark
-@streanlitst.cache(allow_output_mutation=True)
+ 
+@st.cache(allow_output_mutation=True)
 def cached_model():
     model = SentenceTransformer('jhgan/ko-sroberta-multitask')
     return model
